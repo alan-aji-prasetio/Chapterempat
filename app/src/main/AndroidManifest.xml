@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chapterempat">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ChapterEmpat">
+        <activity
+            android:name=".tugas.TugasTigaActivity"
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".ketiga.DataMahasiswaActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".ketiga.PertemuanTigaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tugas.TugasDua"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".kedua.LatihanSatu"
+            android:exported="false" />
+        <activity
+            android:name=".kedua.AlertDialogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tugas.TugasSatu"
+            android:exported="false" />
+        <activity
+            android:name=".pertama.NavComponentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pertama.halamandua"
+            android:exported="false" />
+        <activity
+            android:name=".pertama.MiniChallenge"
+            android:exported="false" />
+        <activity
+            android:name=".pertama.FirstActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

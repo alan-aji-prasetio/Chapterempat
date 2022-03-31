@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_tugas"
+    app:startDestination="@id/fragmenSatuTugas">
+
+    <fragment
+        android:id="@+id/fragmenSatuTugas"
+        android:name="com.example.chapterempat.tugas.FragmenSatuTugas"
+        android:label="fragment_fragmen_satu_tugas"
+        tools:layout="@layout/fragment_fragmen_satu_tugas" >
+        <action
+            android:id="@+id/action_fragmenSatuTugas_to_fragmentDuaTugas"
+            app:destination="@id/fragmentDuaTugas" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDuaTugas"
+        android:name="com.example.chapterempat.tugas.FragmentDuaTugas"
+        android:label="fragment_dua_tugas"
+        tools:layout="@layout/fragment_dua_tugas" >
+        <action
+            android:id="@+id/action_fragmentDuaTugas_to_fragmenSatuTugas"
+            app:destination="@id/fragmenSatuTugas" />
+    </fragment>
+</navigation>
